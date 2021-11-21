@@ -1,0 +1,7 @@
+C:\Users\unknown\source\repos\Lb1_spz\Lb1_spz\bin\Debug\Lb1_spz.exe.config
+C:\Users\unknown\source\repos\Lb1_spz\Lb1_spz\bin\Debug\Lb1_spz.exe
+C:\Users\unknown\source\repos\Lb1_spz\Lb1_spz\bin\Debug\Lb1_spz.pdb
+C:\Users\unknown\source\repos\Lb1_spz\Lb1_spz\obj\Debug\Lb1_spz.csproj.AssemblyReference.cache
+C:\Users\unknown\source\repos\Lb1_spz\Lb1_spz\obj\Debug\Lb1_spz.csproj.CoreCompileInputs.cache
+C:\Users\unknown\source\repos\Lb1_spz\Lb1_spz\obj\Debug\Lb1_spz.exe
+C:\Users\unknown\source\repos\Lb1_spz\Lb1_spz\obj\Debug\Lb1_spz.pdb
