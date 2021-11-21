@@ -1,0 +1,32 @@
+﻿<Window x:Class="_33333.autenfication"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_33333"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        WindowStartupLocation="CenterScreen"
+        Title="autenfication" Height="300" Width="520">
+    <Grid Background="BlanchedAlmond">
+        <Border MinWidth="400" Margin="15" Background="Goldenrod" VerticalAlignment="Center" Padding="20" MaxWidth="500" CornerRadius="25">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="DeepSkyBlue" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Авторизация" FontSize="25" FontWeight="Bold"  />
+
+                <TextBox x:Name="txtAdmName" materialDesign:HintAssist.Hint="Логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                
+                <PasswordBox x:Name="txtAdmPasswd" materialDesign:HintAssist.Hint="Пароль" />
+               
+
+                <Button Content="Войти" Margin="0 15 0 0" Click="Button_Click_Entry" />
+
+            </StackPanel>
+
+
+        </Border>
+
+    </Grid>
+</Window>

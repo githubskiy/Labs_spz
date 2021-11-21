@@ -1,0 +1,35 @@
+﻿<Window x:Class="_33333.create_proc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_33333"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="create_proc" Height="470" Width="650">
+    <Grid Background="BlanchedAlmond">
+        <Border MinWidth="400" Margin="15" Background="WhiteSmoke" VerticalAlignment="Center" Padding="20" MaxWidth="500" CornerRadius="25">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGreen" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Установка параметров процесса" FontSize="25" FontWeight="Bold" Margin="0 0 0 15" />
+
+                <TextBox x:Name="txtProcName" materialDesign:HintAssist.Hint="Имя процесса" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcUser" materialDesign:HintAssist.Hint="Пользователь" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcCpu" materialDesign:HintAssist.Hint="Использование ресурсов ЦП (от 0% до 100 %)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcMemory" materialDesign:HintAssist.Hint="Количество занимаемой ОП(мегабайт)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcLocation" materialDesign:HintAssist.Hint="Расположение" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcDescribe" materialDesign:HintAssist.Hint="Описание" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcPriority" materialDesign:HintAssist.Hint="Приоритет (от 0 до 4)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                
+                <Button Content="Добавить" Margin="0 15 0 0" Click="Button_Click_Add" />
+
+            </StackPanel>
+
+
+        </Border>
+
+    </Grid>
+</Window>

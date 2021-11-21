@@ -1,0 +1,34 @@
+﻿<Window x:Class="_33333.add_comp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_33333"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+       
+        Title="add_comp" Height="400" Width="600">
+    <Grid Background="BlanchedAlmond">
+        <Border MinWidth="400" Margin="15" Background="WhiteSmoke" VerticalAlignment="Center" Padding="20" MaxWidth="500" CornerRadius="25">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGreen" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Характеристики компьютера" FontSize="25" FontWeight="Bold" Margin="0 0 0 15" />
+
+                <TextBox x:Name="txtCompName" materialDesign:HintAssist.Hint="Название компьютера" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtRAM" materialDesign:HintAssist.Hint="Обьем ОП в мегабайтах" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtChastota" materialDesign:HintAssist.Hint="Частота ЦП(от 0 до 4ГГц)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtCountProcessors" materialDesign:HintAssist.Hint="Количество процессоров(от 1 до 5шт)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+               
+                <Button Content="Применить" Margin="0 15 270 0" Click="Button_Click_Add_Comp" />
+                <Button Content="Закрыть" Margin="0 15 270 0" Click="Button_Click_Close" />
+
+            </StackPanel>
+
+
+        </Border>
+
+    </Grid>
+</Window>

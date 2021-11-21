@@ -1,0 +1,63 @@
+﻿<Window x:Class="_33333.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_33333"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize"  >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition  Height="270"/>
+            <RowDefinition  Height="60"/>
+            <RowDefinition  Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Компьютеры" x:Name="Comps" FontSize="18" FontWeight="Bold" Margin="0 12"  />
+
+        <ComboBox Grid.Row="0" SelectionChanged="OnSelectionChanged"  ItemsSource="{Binding computer}" Name="Computer_list"  VerticalAlignment="Top" Margin="130 12 365 0" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Path = comp_name }"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+           
+        </ComboBox>
+
+
+        <Button Grid.Row="0" Click="Button_Click_Change_Comp" Content="Изменить" Margin="440 0 240 0" />
+        <Button  Click="Button_Click_Add" Grid.Row="0" Content="Добавить" Margin="560 0 120 0" />
+        <Button Grid.Row="0" Click="Button_Click_Remove_Computer"  Content="Удалить" Margin="680 0 0 0"/>
+
+        <DataGrid Grid.Row="1" MouseLeftButtonUp="tableProcess_MouseLeftButtonUp" MouseDoubleClick="tableProcess_MouseDoubleClick" x:Name="tableProcess" ItemsSource="{Binding process}" AutoGenerateColumns="False" CanUserAddRows="False"
+>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="name" IsReadOnly="True" Width="100" Binding="{Binding Path = proc_name}"/>
+                <DataGridTextColumn Header="user" IsReadOnly="True" Width="100" Binding="{Binding Path= proc_user }"/>
+                <DataGridTextColumn Header="cpu" IsReadOnly="True" Width="100" Binding="{Binding  Path= proc_cpu}" />
+                <DataGridTextColumn Header="memory" IsReadOnly="True" Width="100" Binding="{Binding Path= proc_memory}"/>
+                <DataGridTextColumn Header="location" IsReadOnly="True" Width="100" Binding="{Binding Path= proc_location}"/>
+                <DataGridTextColumn Header="description" IsReadOnly="True" Width="100" Binding="{Binding Path= proc_description}"/>
+                <DataGridTextColumn Header="priority" IsReadOnly="True" Width="*" Binding="{Binding Path= proc_priority}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Grid.Row="2" Click="Button_Click_Add_Proc" Content="Добавить процесс" Margin="0 0 630 0" />
+        <Button Grid.Row="2" Click="Button_Click_Del_Proc"  Content="Удалить процесс" Margin="170 0 470 0" />
+        <Button Grid.Row="2" Click="Button_Click_Change_Proc" Content="Изменить процесс" Margin="625 0 0 0" />
+        
+        <StatusBar Grid.Row="3" Margin="0,0,0,-15"   >
+            <TextBlock Text="Количество процессов:"   />
+            <TextBlock Text="0" Name="count_proc_bottom"  />
+            <TextBlock Text="Загрузка ЦП(%):"  Margin="20 0 0 0"/>
+            <TextBlock Text="0" Name="load_cpu_bottom"  />
+            <TextBlock Text="Использование ОЗУ(%):" Margin="20 0 0 0" />
+            <TextBlock Text="0" Name="using_ram_bottom"  />
+        </StatusBar>
+    </Grid>
+</Window>

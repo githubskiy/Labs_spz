@@ -1,0 +1,37 @@
+﻿<Window x:Class="_33333.change_process"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_33333"
+        mc:Ignorable="d"
+         WindowStartupLocation="CenterScreen"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+          Title="change_process" Height="570" Width="650">
+    <Grid Background="BlanchedAlmond">
+        <Border MinWidth="400" Margin="15" Background="WhiteSmoke" VerticalAlignment="Center" Padding="20" MaxWidth="500" CornerRadius="25">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGreen" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Изменение параметров процесса" FontSize="25" FontWeight="Bold" Margin="0 0 0 15" />
+
+                <TextBox x:Name="txtProcNameCng" materialDesign:HintAssist.Hint="Имя процесса" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Loaded="txtProcNameCng_Loaded"/>
+                <TextBox x:Name="txtProcUserCng" materialDesign:HintAssist.Hint="Пользователь" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcCpuCng" materialDesign:HintAssist.Hint="Использование ресурсов ЦП (от 0% до 100 %)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcMemoryCng" materialDesign:HintAssist.Hint="Количество занимаемой ОП(мегабайт)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcLocationCng" materialDesign:HintAssist.Hint="Расположение" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcDescribeCng" materialDesign:HintAssist.Hint="Описание" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtProcPriorityCng" materialDesign:HintAssist.Hint="Приоритет" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                <Button Content="Повысить приоритет" Margin="0 15 280 0" Click="Button_Click_Inc_Priority" />
+                <Button Content="Понизить приоритет" Margin="0 15 280 0" Click="Button_Click_Dec_Priority" />
+                <Button Content="Преминить изменения" Margin="0 15 0 0" Click="Button_Click_Change" />
+
+            </StackPanel>
+
+
+        </Border>
+
+    </Grid>
+</Window>

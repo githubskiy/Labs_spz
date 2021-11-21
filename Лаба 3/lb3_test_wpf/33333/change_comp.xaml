@@ -1,0 +1,38 @@
+﻿<Window x:Class="_33333.change_comp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_33333"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="change_comp" Height="550" Width="650">
+    <Grid Background="BlanchedAlmond">
+        <Border MinWidth="400" Margin="15" Background="WhiteSmoke" VerticalAlignment="Center" Padding="20" MaxWidth="500" CornerRadius="25">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGreen" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Характеристики компьютера" FontSize="25" FontWeight="Bold" Margin="0 0 0 15" />
+
+                <TextBox x:Name="txtCompName" materialDesign:HintAssist.Hint="Название компьютера" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtRAM" materialDesign:HintAssist.Hint="Обьем ОП в мегабайтах" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="txtChastota" materialDesign:HintAssist.Hint="Частота ЦП(от 0 до 4ГГц)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                
+                <Button Content="Повысить частоту на 0.1 ГГц" Click="Button_Click_App_Freq" Margin="0 15 240 0"  Loaded="Button_Loaded" />
+                <Button Content="Понизить частоту на 0.1 ГГц" Click="Button_Click_Nerf_Freq" Margin="0 15 240 0"  Loaded="Button_Loaded" />
+                <TextBox x:Name="txtCountProcessors" materialDesign:HintAssist.Hint="Количество процессоров(от 1 до 5шт)" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                <Button Content="Добавить процессор" Click="Button_Click_Add_Processor"  Margin="0 15 290 0"  Loaded="Button_Loaded" />
+                <Button Content="Удалить процессор" Click="Button_Click_Remove_Processor" Margin="0 15 290 0"  Loaded="Button_Loaded" />
+
+                <Button Content="Применить изменения"  Margin="0 15 0 0" Click="Button_Click_Chng_Comp" Loaded="Button_Loaded" />
+
+            </StackPanel>
+
+
+        </Border>
+
+    </Grid>
+</Window>
