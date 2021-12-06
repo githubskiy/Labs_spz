@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <Title>Pen</Title>
+    <Number>25</Number>
+    <ProducerPrice>1</ProducerPrice>
+    <StorePrice>1.5</StorePrice>
+  </Product>
+  <Product>
+    <Title>Pencil</Title>
+    <Number>25</Number>
+    <ProducerPrice>0.9</ProducerPrice>
+    <StorePrice>1.25</StorePrice>
+  </Product>
+  <Product>
+    <Title>Ruler</Title>
+    <Number>15</Number>
+    <ProducerPrice>0.5</ProducerPrice>
+    <StorePrice>0.75</StorePrice>
+  </Product>
+  <Product>
+    <Title>Folder</Title>
+    <Number>20</Number>
+    <ProducerPrice>2</ProducerPrice>
+    <StorePrice>2.75</StorePrice>
+  </Product>
+  <Product>
+    <Title>Notebook in line</Title>
+    <Number>50</Number>
+    <ProducerPrice>1</ProducerPrice>
+    <StorePrice>1.25</StorePrice>
+  </Product>
+  <Product>
+    <Title>Squared notebook</Title>
+    <Number>50</Number>
+    <ProducerPrice>1</ProducerPrice>
+    <StorePrice>1.25</StorePrice>
+  </Product>
+  <Product>
+    <Title>Marker</Title>
+    <Number>10</Number>
+    <ProducerPrice>1.15</ProducerPrice>
+    <StorePrice>1.5</StorePrice>
+  </Product>
+</ArrayOfProduct>
