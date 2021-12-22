@@ -1,0 +1,13 @@
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\bin\Debug\SPZ_Lab7.exe.config
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\bin\Debug\SPZ_Lab7.exe
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\bin\Debug\SPZ_Lab7.pdb
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.csproj.AssemblyReference.cache
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.csproj.SuggestedBindingRedirects.cache
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.AddStudentForm.resources
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.AddSubjectForm.resources
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.Form1.resources
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.Properties.Resources.resources
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.csproj.GenerateResource.cache
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.csproj.CoreCompileInputs.cache
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.exe
+C:\Users\unkno\source\repos\SPZ_Lab7\SPZ_Lab7\SPZ_Lab7\obj\Debug\SPZ_Lab7.pdb
